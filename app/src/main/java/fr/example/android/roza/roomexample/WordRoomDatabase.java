@@ -12,7 +12,7 @@ import android.support.annotation.NonNull;
  * Created by roza on 21/02/18.
  */
 
-@Database(entities = {Word.class}, version = 1)
+@Database(entities = {Word.class}, version = 1, exportSchema = false )
 public abstract class WordRoomDatabase extends RoomDatabase {
 
       public abstract WordDao wordDao();
